@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .mandal-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Project Section */
+  .project-section, .candidate-section {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+  }
+  
+  .project-section .search-bar, .candidate-section .search-bar {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .project-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .project-section li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+  }
+  
+  .project-section li.active {
+    background: #0082fb;
+    color: #fff;
+  }
+  
+  .project-section .tags span {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 5px;
+    color: #fff;
+  }
+  
+  .project-section .gl {
+    background: #6a9bff;
+  }
+  
+  .project-section .jt {
+    background: #ff9b6a;
+  }
+  
+  .project-section .hf {
+    background: #6aff9b;
+  }
+  
+  /* Candidate Section */
+  .candidate-section .candidate-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .candidate-card {
+    width: 100%;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .candidate-card.active {
+    background: #0082fb;
+    color: #fff;
+  }
+  
+  .candidate-card .avatar {
+    width: 40px;
+    height: 40px;
+    background: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .candidate-card .info h4 {
+    margin: 0;
+    font-size: 16px;
+    color: inherit;
+  }
+  
+  .candidate-card .info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .candidate-card .badge {
+    background: red;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: auto;
+  }
+  
+  /* Message Panel */
+  .message-panel {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .message-panel .tabs button {
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-right: 5px;
+    border-radius: 4px;
+  }
+  
+  .message-panel .tabs button.active {
+    background: #0082fb;
+    color: #fff;
+  }
+  
+  .message-panel .tab-content {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .input-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .send-button {
+    padding: 10px 20px;
+    background: #0082fb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
